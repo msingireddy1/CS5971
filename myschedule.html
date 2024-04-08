@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Semester Schedule</title>
+	<style>
+        /* Hide the button initially */
+        #buttonContainer {
+            display: none;
+        }
+    </style>
+	<h1 id="top"> </h1>
+</head>
+<body style="background-color: #e6e6e6;">
+
+<h1 style="color: #333333;" >My Semester Schedule</h1>
+ 
+<!-- Your name and image --> 
+<p><h3> Mehar Pavan Singireddy </h3> </p>
+<img src="C:\Users\mehar\OneDrive\Desktop\CS597 Project\Images\Mypicture.jpg"width = "200" height = "200" alt="Profile Picture">
+
+<!-- Schedule table -->
+<table border="1" bgcolor="#ffffff" cellpadding="4" cellspacing="1">
+    <thead style="background-color: #6699cc; color: #ffffff;">
+        <tr>
+            <th width="120"></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+	</thead>
+    <tr>
+        <th scope="row">Edward</th>
+        <td rowspan="3" bgcolor="#f2f2f2">CS597</td>
+		<td></td>
+        <td></td>
+        <td bgcolor="#f2f2f2">CS598</td>
+		<td></td>
+    </tr>
+    <tr>
+       <th scope="row">Jacob</th>
+       <td></td>
+       <td bgcolor="#f2f2f2">CS585</td>
+	   <td></td>
+       <td></td>
+    </tr>
+    <tr>
+        <th scope="row">Jackson</th>
+        <td bgcolor="#f2f2f2">CS585</td>
+        <td></td>
+        <td bgcolor="#f2f2f2">CS598</td>
+		<td></td>
+    </tr>
+    <tr>
+        <th scope="row">Pavan </th>
+		<td bgcolor="#f2f2f2">CS585</td>
+		<td></td>
+        <td></td>
+		<td></td>
+        <td bgcolor="#f2f2f2">CS598</td>
+		
+    </tr>
+</table>
+
+<br> </br>
+<!-- Add forms from FormAllInputTypes.html -->
+
+<form name="allinpform" id="allinpform">
+    <fieldset>
+        <legend>All of the available &lt;input&gt; controls</legend>
+
+        <!-- Example 1: Email Control -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br />
+
+        <!-- Example 2: Date Control -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br />
+
+        <!-- Example 3: Text Control -->
+        <label for="text">Name:</label>
+        <input type="text" id="text" name="text"><br />
+
+        
+        <!-- Example 4: Checkbox Control -->
+        <label for="checkbox1">Checkbox:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="cb1" onclick="toggleButtonVisibility()">
+        <label for="checkbox1">Option 1</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="cb2" onclick="toggleButtonVisibility()">
+        <label for="checkbox2">Option 2</label><br />
+		
+		<label for="inputbutton">Button Control</label> 
+		<input type="button" id="inputbutton" name="button" onclick="alert('Thanks for your time')" value="Click Me!"><br />
+		
+		<div id="buttonContainer">
+			 <!-- Example 5: Textarea Control -->
+			<label for="textarea">Any Suggestions!:</label>
+            <textarea id="textarea" name="textarea" rows="3" cols="20"></textarea><br />
+
+            <button type="button">SUBMIT</button>
+        </div>
+		
+		<div id="buttonContainer1">
+			 <!-- Example 5: Textarea Control -->
+			<label for="textarea">Any Suggestions!:</label>
+            <textarea id="textarea" name="textarea" rows="3" cols="20"></textarea><br />
+
+            <button type="button">SUBMIT</button>
+        </div>
+		
+		
+        <!-- Add more form controls as needed -->
+    </fieldset>
+</form>
+
+<script>
+    // Function to toggle button visibility
+    function toggleButtonVisibility() {
+        var buttonContainer = document.getElementById("buttonContainer");
+        var checkbox = document.getElementById("checkbox1");
+		var buttonContainer1 = document.getElementById("buttonContainer1");
+		var checkbox1 = document.getElementById("checkbox2");
+        buttonContainer.style.display = checkbox.checked ? "block" : "none";
+		buttonContainer1.style.display = checkbox1.checked ? "block" : "none";
+    }
+</script>
+
+<p> <a href="#top"> Go to the top of the page. </a> </p>
+
+</body>
+</html>
